@@ -33,27 +33,44 @@ class _DashBoardPageState extends State<DashBoardPage> {
 
   List<BottomNavigationBarItem> items = [
     // first bottom bar item
-    const BottomNavigationBarItem(
-        icon: Icon(
-          Icons.home_outlined,
-        ),
-        label: 'Home'),
+    BottomNavigationBarItem(
+      icon: Image.asset(
+        'lib/asset/icon/home-2.png',
+      ),
+      activeIcon: Image.asset(
+        'lib/asset/icon/home.png',
+        color: AppColor.actualBlueColor,
+      ),
+      label: 'Home',
+    ),
     // second bottom bar item
-    const BottomNavigationBarItem(
-        icon: Icon(
-          CupertinoIcons.heart,
+    BottomNavigationBarItem(
+        icon: Image.asset(
+          'lib/asset/icon/favorite.png',
+        ),
+        activeIcon: Image.asset(
+          'lib/asset/icon/favorite.png',
+          color: AppColor.actualBlueColor,
         ),
         label: 'Favorite'),
     // third bottom bar item
-    const BottomNavigationBarItem(
-        icon: Icon(
-          CupertinoIcons.bell,
+    BottomNavigationBarItem(
+        icon: Image.asset(
+          'lib/asset/icon/notification.png',
+        ),
+        activeIcon: Image.asset(
+          'lib/asset/icon/notification.png',
+          color: AppColor.actualBlueColor,
         ),
         label: 'Notification'),
     // fourth bottom bar item
-    const BottomNavigationBarItem(
-        icon: Icon(
-          CupertinoIcons.person,
+    BottomNavigationBarItem(
+        icon: Image.asset(
+          'lib/asset/icon/person.png',
+        ),
+        activeIcon: Image.asset(
+          'lib/asset/icon/person.png',
+          color: AppColor.actualBlueColor,
         ),
         label: 'Person'),
   ];

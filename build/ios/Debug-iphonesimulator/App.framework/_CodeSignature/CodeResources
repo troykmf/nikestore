@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		mm6A291ramQOl7IG9yDXuykGSDU=
+		zn1/3rbUDFbyetMJMUsXQcfP0c8=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		wlHVmT/A9Yrl70L1aM0h7DHELYQ=
+		hnToZjTvUOJEjDLo/WZJdS3Ov9Q=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		JDNnmu31URXf4pXp9pEJboGAZ5Q=
+		rReT1EPvlcq/Npj6M0tXxNGkZRw=
 		</data>
 		<key>flutter_assets/lib/asset/icon/bag.png</key>
 		<data>
@@ -47,6 +47,10 @@
 		<key>flutter_assets/lib/asset/icon/favorite.png</key>
 		<data>
 		TJDqdazSPZmYH2x8i3SdAigJnpE=
+		</data>
+		<key>flutter_assets/lib/asset/icon/home-2.png</key>
+		<data>
+		LxgML6xLS7bmWhr7xyqqRT9Twag=
 		</data>
 		<key>flutter_assets/lib/asset/icon/home.png</key>
 		<data>
@@ -132,6 +136,30 @@
 		<data>
 		2toykdfl/+d1ebdxur5lOSyxD9M=
 		</data>
+		<key>flutter_assets/lib/asset/image/shoe3.png</key>
+		<data>
+		gJEo+NP/NdMJABjHVkoRSjGcyBQ=
+		</data>
+		<key>flutter_assets/lib/asset/image/shoe4.png</key>
+		<data>
+		YlUMfcZ1oa0jnlt20xyO/Ct7eeQ=
+		</data>
+		<key>flutter_assets/lib/asset/image/shoe5.png</key>
+		<data>
+		kEh3gyKXEQhOO2lElWRN1WOAt6w=
+		</data>
+		<key>flutter_assets/lib/asset/image/shoe6.png</key>
+		<data>
+		iBkEcZcxVDh3nCn/f37gAbBeZJs=
+		</data>
+		<key>flutter_assets/lib/asset/image/shoe7.png</key>
+		<data>
+		YlUMfcZ1oa0jnlt20xyO/Ct7eeQ=
+		</data>
+		<key>flutter_assets/lib/asset/image/shoe8.png</key>
+		<data>
+		34UJkfmurqO0IXGTnTky1E1/srU=
+		</data>
 		<key>flutter_assets/lib/asset/image/shoes2.png</key>
 		<data>
 		ytcEsGSq06Yirli4ZJaqn4x/Brw=
@@ -171,14 +199,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bJUZK0VGenecR7cmCkjWsayyi5ugahi0nrDdN286Zhs=
+			15oipNhiWPIXYLskVJKVzrk/faoiJjeHgr5VOSQsMFQ=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UYk0X3O/TU02WN+k9SFEMy0zmTrAqat1cAIdZWHT1q4=
+			21+d9g0ymerf+J436Lc5Zk6SNfkEQJbdvgLg9uJBcAA=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -213,7 +241,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OyEXCpKEU1dhQzPNQfYdOM4FSb9oyHMMAZWx3c3AxfE=
+			wNvSqIA56kqyBWIFilGKYc+6PIR4oFNpqd11j9K6w7c=
 			</data>
 		</dict>
 		<key>flutter_assets/lib/asset/icon/bag.png</key>
@@ -235,6 +263,13 @@
 			<key>hash2</key>
 			<data>
 			k0wlmwyUnnXCKmopb1q5TjXyL70FjUlgBnOL9azLrV0=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/asset/icon/home-2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PT9e0AFzKwyQSirLNRdFe3qeI5VHJA4sYPPkkHpJvic=
 			</data>
 		</dict>
 		<key>flutter_assets/lib/asset/icon/home.png</key>
@@ -382,6 +417,48 @@
 			<key>hash2</key>
 			<data>
 			McWJaf7UiP8xM6BNuex9alB/mPJlM5353qj/NYzvEHE=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/asset/image/shoe3.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jznWDV9LZjrirf3kPQarn0TAxje+Rs3wtsoMejfzGWQ=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/asset/image/shoe4.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TCnDq8nKQRLag3s1JJz+Feo/hk+7nqTflIEmY4bXdUE=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/asset/image/shoe5.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hg5Lfwr3X4tJdMidOfvrLcSFZ/TwJoMIxLEi8siaRPY=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/asset/image/shoe6.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3JiINWlGwKZtidQcvhzev8/qfMBMQhicBHZP6Ao7atI=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/asset/image/shoe7.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TCnDq8nKQRLag3s1JJz+Feo/hk+7nqTflIEmY4bXdUE=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/asset/image/shoe8.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WvjxAnIVHevGctLf+CMc37OxbaqUZeOwAwU5IzNSdFs=
 			</data>
 		</dict>
 		<key>flutter_assets/lib/asset/image/shoes2.png</key>

@@ -18,4 +18,6 @@ class AppColor {
   static const blackColor = Color(0xFF2B2B2B);
 
   static const whiteColor = Color(0xFFFFFFFF);
+
+  static const actualBlueColor = Color(0xFF0033EC);
 }

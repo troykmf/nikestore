@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nike_store/constants/colors.dart';
 import 'package:nike_store/constants/styles.dart';
@@ -241,69 +240,6 @@ Widget textField({
   );
 }
 
-class TabBarItems extends StatefulWidget {
-  const TabBarItems({super.key});
-
-  @override
-  State<TabBarItems> createState() => _TabBarItemsState();
-}
-
-class _TabBarItemsState extends State<TabBarItems> {
-  List<String> tabTitle = [
-    'All Shoes',
-    'Outdoor',
-    'Tennis',
-  ];
-
-  int currentIdx = 0;
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 50,
-          child: ListView.builder(
-            physics: const BouncingScrollPhysics(),
-            scrollDirection: Axis.horizontal,
-            itemCount: tabTitle.length,
-            itemBuilder: (context, index) {
-              return GestureDetector(
-                onTap: () {
-                  setState(() {
-                    currentIdx = index;
-                  });
-                },
-                child: Container(
-                  margin: EdgeInsets.only(left: 20.r),
-                  width: 110.r,
-                  height: 20.r,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.r),
-                    color: currentIdx == index
-                        ? AppColor.blueColor
-                        : AppColor.whiteColor,
-                  ),
-                  child: Center(
-                    child: richText(
-                      text: tabTitle[index],
-                      style: AppStyle().authSubtitleText.copyWith(
-                            fontSize: 14,
-                            color: currentIdx == index
-                                ? AppColor.whiteColor
-                                : AppColor.blackColor,
-                          ),
-                    ),
-                  ),
-                ),
-              );
-            },
-          ),
-        ),
-      ],
-    );
-  }
-}
-
 Widget drawerRowWidget(
   String image,
   String title,
@@ -379,6 +315,57 @@ Widget profileTitleAndContainer({
           ),
         ),
       ],
+    ),
+  );
+}
+
+Widget seeAll({
+  required String title,
+  required VoidCallback ontap,
+}) {
+  return SizedBox(
+    width: 339.w,
+    height: 19.h,
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        richText(
+            text: title,
+            style: AppStyle()
+                .blackRegularText
+                .copyWith(fontWeight: FontWeight.bold)),
+        GestureDetector(
+          onTap: ontap,
+          child: richText(
+              text: 'See all',
+              style: AppStyle()
+                  .blackSmallSemiboldText
+                  .copyWith(color: AppColor.blueColor)),
+        ),
+      ],
+    ),
+  );
+}
+
+Widget productTileFab() {
+  return ClipRRect(
+    borderRadius: BorderRadius.only(
+      topLeft: Radius.circular(10.r),
+    ),
+    child: ColoredBox(
+      color: AppColor.blueColor,
+      child: SizedBox(
+        height: 40.h,
+        width: 40.w,
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(5.w, 5.h, 8.w, 8.h),
+          child: const Icon(
+            CupertinoIcons.add,
+            size: 20,
+            color: AppColor.whiteColor,
+          ),
+        ),
+      ),
     ),
   );
 }

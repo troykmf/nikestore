@@ -4,6 +4,8 @@ import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:nike_store/constants/app_widgets.dart';
 import 'package:nike_store/constants/colors.dart';
 import 'package:nike_store/constants/styles.dart';
+
+import '../view/tab_bar_view.dart';
 // import 'package:nike_store/page/home/home_page_provider.dart';
 // import 'package:provider/provider.dart';
 
@@ -17,10 +19,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   late final TextEditingController searchController;
 
-  // double xOffset = 0;
-  // double yOffset = 0;
-
-  // bool isDrawerOpen = false;
   final zoomController = ZoomDrawerController();
 
   @override
@@ -34,82 +32,46 @@ class _HomePageState extends State<HomePage> {
     // final allProductProvider = Provider.of<HomePageProvider>(context);
     return Scaffold(
       backgroundColor: AppColor.scaffoldColor,
-      body: SafeArea(
-        child: SingleChildScrollView(
+      body: SingleChildScrollView(
+        child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                width: double.maxFinite.r,
+                width: double.maxFinite.w,
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
+                  padding: EdgeInsets.only(top: 8.h),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      // isDrawerOpen
-                      //     ? GestureDetector(
-                      //         onTap: () {
-                      //           setState(() {
-                      //             xOffset = 0;
-                      //             yOffset = 0;
-                      //             isDrawerOpen = false;
-                      //           });
-                      //         },
-                      //         child: SizedBox(
-                      //           width: 25.17.r,
-                      //           height: 18.r,
-                      //           child: Image.asset(
-                      //               'lib/asset/image/Hamburger.png'),
-                      //         ),
-                      //       )
-                      //     : GestureDetector(
-                      //         onTap: () {
-                      //           setState(() {
-                      //             xOffset = 280;
-                      //             yOffset = 80;
-                      //             isDrawerOpen = true;
-                      //           });
-                      //         },
-                      //         child: SizedBox(
-                      //           width: 25.17.r,
-                      //           height: 18.r,
-                      //           child: Image.asset(
-                      //               'lib/asset/image/Hamburger.png'),
-                      //         ),
-                      //       ),
-
                       GestureDetector(
                         onTap: () {
-                          if (ZoomDrawer.of(context)!.isOpen()) {
-                            ZoomDrawer.of(context)!.close();
-                          } else {
-                            ZoomDrawer.of(context)!.open();
-                          }
+                          ZoomDrawer.of(context)!.open();
                         },
-                        child: SizedBox(
-                          width: 25.17.r,
-                          height: 18.r,
-                          child: Image.asset('lib/asset/image/Hamburger.png'),
-                        ),
+                        child: Image.asset(
+                            width: 25.17.w,
+                            height: 18.h,
+                            'lib/asset/image/Hamburger.png'),
                       ),
                       Stack(
                         children: [
                           SizedBox(
-                            height: 40,
-                            width: 170,
+                            height: 40.h,
+                            width: 170.w,
                             child: richText(
                                 text: 'Explore',
                                 style: AppStyle().authHeadingText),
                           ),
                           Positioned(
-                              left: -0.r,
-                              child: Image.asset(
-                                'lib/asset/image/Highlight_05.png',
-                                color: AppColor.blackColor,
-                                height: 19,
-                                width: 18,
-                              ))
+                            left: -0.w,
+                            child: Image.asset(
+                              'lib/asset/image/Highlight_05.png',
+                              color: AppColor.blackColor,
+                              height: 19.h,
+                              width: 18.w,
+                            ),
+                          ),
                         ],
                       ),
                       Stack(
@@ -120,8 +82,8 @@ class _HomePageState extends State<HomePage> {
                             child: Image.asset('lib/asset/icon/bag.png'),
                           ),
                           Positioned(
-                              right: 5.r,
-                              top: 5.r,
+                              right: 5.w,
+                              top: 5.h,
                               child: Image.asset('lib/asset/image/reddot.png'))
                         ],
                       ),
@@ -129,28 +91,29 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: 15.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   SizedBox(
-                    width: 270.r,
-                    height: 55.r,
+                    width: 270.w,
+                    height: 55.h,
                     child: textField(
                       controller: searchController,
                       hintText: 'Lookin for shoes',
                       suffix: null,
                     ),
                   ),
-                  SizedBox(
-                      width: 52.r,
-                      height: 52.r,
-                      child: Image.asset('lib/asset/image/searchfilter.png')),
+                  Image.asset(
+                    'lib/asset/image/searchfilter.png',
+                    width: 52.w,
+                    height: 52.h,
+                  ),
                 ],
               ),
-              SizedBox(height: 15.r),
+              SizedBox(height: 15.h),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.symmetric(horizontal: 16.w),
                 child: richText(
                   text: 'Select Category',
                   style: AppStyle()
@@ -158,23 +121,13 @@ class _HomePageState extends State<HomePage> {
                       .copyWith(fontWeight: FontWeight.w600),
                 ),
               ),
-              SizedBox(height: 15.r),
-              const TabBarItems(),
+              SizedBox(height: 15.h),
+              TabBarItems(),
             ],
           ),
         ),
       ),
     );
-    // Container(
-    //   // transform: Matrix4.translationValues(xOffset, yOffset, 0)
-    //   //   ..scale(isDrawerOpen ? 0.85 : 1.00)
-    //   //   ..rotateZ(isDrawerOpen ? -50 : 0),
-    //   // duration: const Duration(milliseconds: 200),
-    //   height: MediaQuery.of(context).size.height,
-    //   width: MediaQuery.of(context).size.width,
-    //   color: AppColor.scaffoldColor,
-    //   child:
-    // );
   }
 
   @override
