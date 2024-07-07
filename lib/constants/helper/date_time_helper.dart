@@ -1,4 +1,4 @@
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 
 // String dateConverter(String myDate) {
 //   String date;
@@ -50,7 +50,7 @@ String checkDate(String dateString) {
   if ((currentTime.year == checkedTime.year) &&
       (currentTime.month == checkedTime.month) &&
       (currentTime.day == checkedTime.day)) {
-    return "TODAY";
+    return "Recent";
   } else if ((currentTime.year == checkedTime.year) &&
       (currentTime.month == checkedTime.month)) {
     if ((currentTime.day - checkedTime.day) == 1) {
